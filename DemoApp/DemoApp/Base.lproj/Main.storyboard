@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P7w-ck-54q">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJx-q8-HXe">
+                                <rect key="frame" x="146.66666666666666" y="440.66666666666669" width="100" height="40"/>
+                                <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="VNZ-x4-F9o"/>
+                                    <constraint firstAttribute="height" constant="40" id="bMi-hf-rOg"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="SSL Pinning">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextVCButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YBm-ut-CTA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FJx-q8-HXe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0Ii-24-2JV"/>
+                            <constraint firstItem="FJx-q8-HXe" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="KUh-bD-FXR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NSw-Tb-xtf"/>
+                    <connections>
+                        <outlet property="sslPinningButton" destination="FJx-q8-HXe" id="JIS-41-lf2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886.25954198473278" y="-28.169014084507044"/>
+        </scene>
+        <!--CheckSSL Pinning View Controller-->
+        <scene sceneID="cqO-e9-RZm">
+            <objects>
+                <viewController storyboardIdentifier="CheckSSLPinningViewController" id="vxU-je-iLU" customClass="CheckSSLPinningViewController" customModule="DemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V0v-nc-AVN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4N-c0-alK">
+                                <rect key="frame" x="15" y="209" width="363" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hot Action Cop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbm-48-0eB">
+                                <rect key="frame" x="25" y="245" width="343" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="17B-Xn-Nvn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collection Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfX-Sj-XzI">
+                                <rect key="frame" x="15" y="305" width="363" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hot Action Cop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zS-YG-wsD">
+                                <rect key="frame" x="25" y="341" width="343" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="sNY-6G-jRB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DlY-WE-u1r"/>
+                        <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qfX-Sj-XzI" firstAttribute="top" secondItem="dbm-48-0eB" secondAttribute="bottom" constant="20" id="3FT-mg-fXr"/>
+                            <constraint firstItem="DlY-WE-u1r" firstAttribute="trailing" secondItem="qfX-Sj-XzI" secondAttribute="trailing" constant="15" id="7hF-3f-qJK"/>
+                            <constraint firstItem="DlY-WE-u1r" firstAttribute="trailing" secondItem="dbm-48-0eB" secondAttribute="trailing" constant="25" id="8Nk-Fc-drN"/>
+                            <constraint firstItem="DlY-WE-u1r" firstAttribute="trailing" secondItem="o4N-c0-alK" secondAttribute="trailing" constant="15" id="MfD-kK-Ggd"/>
+                            <constraint firstItem="o4N-c0-alK" firstAttribute="leading" secondItem="DlY-WE-u1r" secondAttribute="leading" constant="15" id="Ueq-lt-jzP"/>
+                            <constraint firstItem="dbm-48-0eB" firstAttribute="leading" secondItem="DlY-WE-u1r" secondAttribute="leading" constant="25" id="Uq9-Ja-yFN"/>
+                            <constraint firstItem="4zS-YG-wsD" firstAttribute="leading" secondItem="DlY-WE-u1r" secondAttribute="leading" constant="25" id="XOE-f5-G0w"/>
+                            <constraint firstItem="dbm-48-0eB" firstAttribute="top" secondItem="o4N-c0-alK" secondAttribute="bottom" constant="15" id="ayb-zu-BLK"/>
+                            <constraint firstItem="4zS-YG-wsD" firstAttribute="top" secondItem="qfX-Sj-XzI" secondAttribute="bottom" constant="15" id="bpg-Nj-57m"/>
+                            <constraint firstItem="qfX-Sj-XzI" firstAttribute="leading" secondItem="DlY-WE-u1r" secondAttribute="leading" constant="15" id="dd3-rN-q5F"/>
+                            <constraint firstItem="o4N-c0-alK" firstAttribute="top" secondItem="DlY-WE-u1r" secondAttribute="top" constant="150" id="hFs-4b-4Rq"/>
+                            <constraint firstItem="DlY-WE-u1r" firstAttribute="trailing" secondItem="4zS-YG-wsD" secondAttribute="trailing" constant="25" id="qLH-u8-m41"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="artistNameLabel" destination="dbm-48-0eB" id="FRU-S6-9J3"/>
+                        <outlet property="artistNameStaticLabel" destination="o4N-c0-alK" id="sTa-FA-CHk"/>
+                        <outlet property="collectionNameLabel" destination="4zS-YG-wsD" id="ueM-rr-yuD"/>
+                        <outlet property="collectionNameStaticLabel" destination="qfX-Sj-XzI" id="Ugs-Df-riN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5GS-Fj-MA8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1623.6641221374045" y="-20.422535211267608"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K3f-tu-J2U">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P7w-ck-54q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jWe-XA-KGf">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jpW-et-VgK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ag-kW-g4m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-40.458015267175568" y="-28.169014084507044"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
